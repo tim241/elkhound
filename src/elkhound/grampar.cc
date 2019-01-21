@@ -1191,12 +1191,14 @@ GrammarAST *parseGrammarFile(rostring origFname, bool useML)
 {
   string fname = origFname;
 
+  /*
   #ifndef NDEBUG
   if (tracingSys("yydebug")) {
     yydebug = true;    // this flag goes away when NDEBUG is specified..
   }
   #endif // NDEBUG
 
+  */
   // open input file
   Owner<std::ifstream> in;
   if (fname.empty()) {
